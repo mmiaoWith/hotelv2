@@ -1,0 +1,54 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">  
+	<HEAD>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="slide//golbal.css" type="text/css" rel="stylesheet"/>
+		<link href="slide/office.css" type="text/css" rel="stylesheet"/>
+		<link rel="shortcut icon" href="favicon.ico" />
+ 		<link rel="icon" href="favicon.ico" />
+	</HEAD>
+	<BODY>
+		<div id="container" style="margin-top:0px;">
+			<div id="leftFrame">
+				<script src="slide/jquery.js" type="text/javascript"></script>
+				<div class="box">
+					<h2>宾馆内部情况预览</h2>
+					<DIV id="img_player">
+						<DIV id="bigImage" class="dc_booth" onclick="changeImage();">
+						</DIV>
+						<DIV class="dc_tool">
+							<SPAN class="tool-pre"><A id="bigPre" title="上一张"
+								href="javascript:void(0)" onclick="pre();">&lt;&lt;上一张</A> </SPAN>&nbsp;
+							<SPAN class="tool-next"><A id="bigNext" title="下一张"
+								href="javascript:void(0)" onclick="next();">下一张&gt;&gt;</A> </SPAN>
+						</DIV>
+						<DIV class="dc_num">
+							<SPAN class="dc_pre"><A id="litterPre" title="上一张"
+								href="javascript:void(0)" onclick="pre();"></A> </SPAN><SPAN class="dc_next"><A
+								id="litterNext" title="下一张" href="javascript:void(0)"
+								onclick="next();"></A> </SPAN>
+							<DIV class="dc_ul">
+								<DIV id="litterImage">
+									<SPAN><img onclick="showFix(0)" alt="图片0" src="slide/1.jpg" title="宾馆1"/></SPAN>
+									<SPAN><img onclick="showFix(1)" alt="图片1" src="slide/2.jpg" title="宾馆2"/></SPAN>
+									
+								</DIV>
+							</DIV>
+						</DIV>
+					</DIV>
+				</div>
+				<script type="text/javascript" language="javascript" src="slide/image_view.js"></script>
+				<script language="javascript" type="text/javascript">
+					var pictures = new Array('slide/1.jpg','slide/2.jpg');
+					 show();
+				</script>
+				<?php
+					}
+				?>
+			</div>
+			<div id="rightFrame">
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+	</BODY>
+</HTML>
